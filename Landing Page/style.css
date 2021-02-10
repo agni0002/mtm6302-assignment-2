@@ -1,0 +1,291 @@
+/* Google fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+   -----------------CSS RESET------------------------------
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************************** Mobile View and Desktop View ********************** */
+
+body {
+  background-color: #f7f7ff;
+  font-family: "Montserrat", sans-serif; /* Setting Montserrat to all the elements in the HTML doc*/
+}
+header {
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+main {
+  padding: 1.2rem;
+  padding-bottom: 0rem;
+}
+footer {
+  background-color: #fffd83;
+  padding: 30px;
+  font-size: 0.8rem;
+}
+h1 {
+  font-weight: 600; /* Weight will increse the thickness fo the font */
+  color: rgb(
+    58,
+    58,
+    58
+  ); /* it wil set the font color to all the H1 elements in the HTML docs*/
+  margin-bottom: 10px; /* It will give a space or margin to the bottom to H1 element*/
+}
+#logo {
+  width: 3rem; /* It will set the width of Logo img to 3 rem*/
+  height: 3rem; /* It will set the height of Logo img to 3 rem*/
+}
+header > p {
+  font-weight: thin;
+  font-size: 0.7rem;
+  color: rgb(85, 85, 85);
+  word-spacing: 2.5px; /* It will give space to all the word of paragraph element which is under the header element.  */
+}
+main > #main_content {
+  height: 400px; /* It give the height 480px to the content. */
+  background-image: url(./images/bg-image/scooter.svg); /* it wil set a background-image to main_content Id's Element*/
+  background-repeat: no-repeat; /* IT will not allow the background to repeat it self. */
+  background-position-y: bottom; /* It will vertically set the postion of background image. */
+}
+main > article {
+  background-image: url(./images/bg-image/scooter.svg);
+  height: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0.5rem;
+}
+main > aside {
+  background-color: #f7f7ff;
+  box-shadow: 0px 0px 20px #888888; /* It will give a shadow to the box */
+  border-radius: 20px; /* it wil give the round to all the borders of aside element. */
+  margin: 0.5rem auto;
+  padding: 0.8rem;
+}
+aside > h1 + p {
+  font-size: 0.5rem;
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+}
+form {
+  display: flex; /* This flex prop will make from a flexbox and all the direct elements it flex items*/
+  flex-direction: column;
+}
+form > input {
+  border: none;
+  margin: 10px 0;
+  background-color: rgba(211, 211, 211, 0.26);
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 10px;
+}
+form > button {
+  border: none; /* It will remove the border from the button element. */
+  background-color: #57eeaad7;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: rgb(58, 58, 58);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+#checkCont {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center; /* It will set the text to align in center */
+}
+#checkCont > label {
+  margin-left: 3px;
+  font-size: 0.5rem;
+  justify-items: end; /* This wil put all the element of label tag to the end*/
+}
+aside > p {
+  font-size: 0.4rem;
+  font-weight: 400;
+}
+.footer_content > button {
+  margin-top: 10px;
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 0.5rem;
+  font-weight: 700;
+  background-color: #ff8480;
+  height: 30px;
+  border-radius: 10px;
+}
+.footer_input {
+  box-sizing: border-box;
+  margin-right: 10px;
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px 10px;
+}
+.footer_content > h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer_content > p {
+  font-size: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+/* ************************** Desktop View ********************************/
+
+@media screen and (min-width: 775px) {
+  /* Until the min-width is 775px all the styles from the below block will work.*/
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  main > #main_content {
+    width: 60vw;
+    background-position-x: right;
+  }
+  main > article {
+    width: 35vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row; /* It will set the direction of the flex box. */
+  }
+}
