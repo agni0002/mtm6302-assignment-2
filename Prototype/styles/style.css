@@ -1,0 +1,494 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* //////  Css Reset   //////// */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -------------------------------------------------------All Device note--------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ------------------------------------------------------- All Device : HEADER ---------------------- */
+
+#logo {
+  width: 100%;
+  height: 100px;
+}
+header {
+  display: flex;
+  color: aliceblue;
+  background-color: #3c3b39;
+  list-style: none;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+header h1 {
+  font-size: 3rem;
+}
+
+.ball {
+  grid-area: icon1;
+  padding: 20px;
+  justify-self: stretch;
+}
+.tram {
+  grid-area: icon2;
+  padding: 20px;
+  align-self: stretch;
+  justify-self: right;
+}
+.nord {
+  grid-area: icon3;
+  padding: 20px;
+  align-self: stretch;
+}
+.heart {
+  grid-area: icon4;
+  padding: 20px;
+  align-self: stretch;
+  justify-self: right;
+}
+#President-say {
+  color: aliceblue;
+}
+
+/*  Sections */
+section {
+  padding: 3rem;
+  list-style: none;
+}
+section h1,
+section button {
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+section p {
+  margin-top: 10px;
+  line-height: 30px;
+  padding: 7px 3rem;
+  font-size: 1.2rem;
+}
+section h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  padding: 7px 3rem;
+}
+section h3 {
+  color: #26a683;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 7px 3rem;
+}
+.getbtn {
+  font-weight: 900;
+  border-radius: 8rem;
+  width: 100%;
+  max-height: 25%;
+  font-size: 1.5rem;
+  box-shadow: -5px 20px 15px -10px gray;
+  background-color: #26a683;
+  color: white;
+}
+.btn-learn-more {
+  font-weight: 900;
+  color: white;
+  background-color: #26a683;
+  border-radius: 8rem;
+  box-shadow: -5px 10px 25px -10px gray;
+}
+.Cheers-section {
+  padding: 0;
+  position: relative;
+}
+.icon-container p {
+  padding: 0;
+  color: #26a683;
+}
+.women-section {
+  background-color: #3c3b39;
+}
+#img-women {
+  width: 70%;
+  display: block;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 20px auto;
+}
+.women-section h2 {
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #3c3b39;
+  padding: 30px;
+  color: white;
+  position: relative;
+}
+footer h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.footer-icon-container {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer-icon-container li {
+  margin: 20px 10px;
+}
+.top-btn-container {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.top-btn-container img {
+  cursor: pointer;
+  display: block;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+/*  -------------------------------------------------Mobile Device note-----------------------------*/
+@media screen and (max-width: 500px) {
+  /* --------------------------------------Mobile Device : Header---------------------------------- */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  header a:first-child {
+    margin: 0;
+  }
+  header a {
+    margin: 0.5rem 0;
+  }
+
+  /*---- Section 1 */
+
+  .icon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.3fr;
+    grid-template-areas: "icon1 icon2" "icon3 icon4" "grid-btn grid-btn";
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .getbtn {
+    grid-area: grid-btn;
+    justify-self: left;
+    margin-top: 20px;
+    font-weight: 900;
+    border-radius: 8rem;
+    width: 100%;
+    max-height: 25%;
+    font-size: 1.5rem;
+    box-shadow: -5px 20px 15px -10px gray;
+    background-color: #26a683;
+    color: white;
+  }
+
+  /* Cheer-Section (Section 2) */
+
+  #reading-girl {
+    margin-top: -70px;
+    width: 100%;
+    max-width: 500px;
+  }
+  .home-img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  .btn-learn-more {
+    margin: 20px;
+    margin-left: 60%;
+    right: 50px;
+  }
+
+  /* women-section (Section 3) */
+
+  .women-section p {
+    color: aliceblue;
+    text-align: center;
+  }
+  .entertainment-section {
+    padding: 0;
+  }
+  .entertainment-section h2 {
+    text-align: center;
+    line-height: 45px;
+  }
+
+  /* Footer */
+}
+
+/* table Device note  */
+@media screen and (min-width: 500px) {
+  /* -----------------------------------------------table Device:Header------ */
+  header {
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+  }
+  #logo {
+    justify-self: left;
+    margin-left: -100px;
+  }
+  header a {
+    margin: 20px;
+  }
+
+  /* --------Section 1------- */
+  .icon-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "icon1 icon2 icon3 icon4" "btn btn btn btn";
+  }
+  .getbtn {
+    grid-area: btn;
+    font-weight: 900;
+    border-radius: 8rem;
+    width: 100%;
+    max-height: 40%;
+    font-size: 1.5rem;
+    box-shadow: -5px 20px 15px -10px gray;
+    background-color: #26a683;
+    color: white;
+  }
+  #reading-girl {
+    margin-top: -70px;
+    width: 100%;
+    max-width: 786px;
+  }
+  .home-img {
+    width: 100%;
+    max-width: 786px;
+    margin-bottom: 20px;
+  }
+  .btn-learn-more {
+    margin: 20px;
+    margin-left: 60%;
+    right: 50px;
+  }
+  .women-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .women-section div {
+    flex-basis: 150px;
+  }
+  .women-section h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .women-section > p {
+    width: 75%;
+  }
+  /* Section 3 (entertainment) */
+  .entertainment-section {
+    padding: 0;
+  }
+}
+
+/* Desktop Devices */
+
+@media screen and (min-width: 786px) {
+  /* ---------------------------------------Desktop-Device : HEADER----------------- */
+  #logo {
+    justify-self: left;
+    margin-left: -800px;
+  }
+  header a:last-child {
+    margin-right: 100px;
+  }
+
+  /*------------------------------------------ Desktop-Device : SECTION 1 -----------------------*/
+  .sec-1 {
+    display: flex;
+  }
+  .sec-1 .text-and-icons {
+    padding: 20px 150px;
+  }
+  .sec-1 #reading-girl {
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  /*------------------------------------------ Desktop-Device : SECTION 2 (Cheers-section)--------------------*/
+  .Cheers-section {
+    background-color: #eeeeee;
+    padding: 2rem;
+    display: flex;
+  }
+
+  /*------------------------------------------ Desktop-Device : SECTION 3 (Women_section)-------------------*/
+  .women-section div {
+    display: flex;
+  }
+  #img-women {
+    width: 200px;
+  }
+  .women-section div * {
+    width: 100px;
+  }
+  .women-section br {
+    display: none;
+  }
+
+  /*------------------------------------------ Desktop-Device : SECTION 4 (entertainment-section)-------------------*/
+  .entertainment-section {
+    display: flex;
+    padding: 2rem;
+  }
+  .entertainment-section .home-img {
+    order: 2;
+  }
+}

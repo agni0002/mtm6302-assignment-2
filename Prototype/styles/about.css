@@ -1,0 +1,428 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* //////  Css Reset   //////// */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*note---------------------------------- All Devices ------------------------------*/
+
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  line-height: 2.9rem;
+}
+h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+h3 {
+  color: #26a683;
+  font-size: 1.25rem;
+  margin: 0.8rem 0;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #494949;
+  margin: 0.8rem 0;
+}
+button {
+  display: block;
+  font-weight: 900;
+  border-radius: 8rem;
+  width: 40%;
+  margin: auto;
+  height: 35px;
+  font-size: 1.5rem;
+  background-color: #26a683;
+  color: white;
+  border: none;
+}
+section {
+  padding: 0.8rem 1.8rem;
+  line-height: 2rem;
+}
+aside {
+  padding: 20px 0;
+  text-align: center;
+  height: 100px;
+  background-color: #494949;
+}
+aside p {
+  color: #f3f3f3;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+.Competitive-friends,
+.indoor-climbing {
+  background-color: #f3f3f3;
+}
+.indoor-climbing {
+  display: flex;
+  padding: 0.8rem 3.6rem;
+}
+.flex {
+  display: flex;
+}
+
+/* ************************************ All Devices Header ************************************/
+#logo {
+  width: 100%;
+  height: 100px;
+}
+header {
+  display: flex;
+  color: aliceblue;
+  background-color: #3c3b39;
+  list-style: none;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+header h1 {
+  font-size: 3rem;
+}
+
+/* ************************************ All Devices Footer *********************************** */
+footer {
+  background-color: #3c3b39;
+  padding: 30px;
+  color: white;
+  position: relative;
+}
+footer h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.footer-icon-container {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer-icon-container li {
+  margin: 20px 10px;
+}
+.top-btn-container {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.top-btn-container img {
+  cursor: pointer;
+  display: block;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+/*note ----------------------------------Mobile Devices---------------------------- */
+
+@media screen and (max-width: 500px) {
+  /* ************************************ Mobile Devices Header ************************************/
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  header a:first-child {
+    margin: 0;
+  }
+  header a {
+    margin: 0.5rem 0;
+  }
+
+  /* ***************************************Mobile Device Sections */
+
+  /* note Section 1 */
+  .expectation #construction {
+    width: 100%;
+    max-width: 500px;
+  }
+  /* note section 2 */
+  .color-background {
+    background-color: #26a682;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+  .cards h1 {
+    font-size: 2.25rem;
+    font-style: italic;
+    margin-top: 1.25rem;
+  }
+  .cards p {
+    font-size: 1.25rem;
+  }
+  .Competitive-friends h2 {
+    font-size: 2.25rem;
+  }
+  .Competitive-friends h3 {
+    font-size: 1.85rem;
+  }
+  .Competitive-friends p {
+    font-size: 1.1rem;
+
+    font-weight: 400;
+  }
+  .thank-you img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  #bar,
+  #bowling {
+    display: none;
+  }
+} /* --------------------------------------Tablet Devices----------------------------- */
+
+@media screen and (min-width: 500px) {
+  header {
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+  }
+  #logo {
+    justify-self: left;
+    margin-left: -100px;
+  }
+  header a {
+    margin: 20px;
+  }
+  /* **********************************Tab Device Sections*************** */
+  .color-background {
+    background-color: #26a682;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+  .service {
+    display: flex;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  #bar,
+  #bowling {
+    height: 390px;
+    width: 200px;
+    margin: 0 20px;
+  }
+  .Competitive-friends {
+    display: flex;
+    margin: 20px 0;
+  }
+  aside {
+    display: flex;
+  }
+  aside p {
+    margin: auto auto;
+  }
+  .thank-you {
+    text-align: center;
+  }
+  .thank-you img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+/* --------------------------------------Desktop Devices----------------------------- */
+
+@media screen and (min-width: 900px) {
+  header a:last-child {
+    margin-right: 5vw;
+  }
+  #logo {
+    width: 20vw;
+    margin-right: 60vw;
+    justify-items: flex-start;
+  }
+  .expectation {
+    display: flex;
+    padding: 40px;
+  }
+  .expectation #construction {
+    width: 100%;
+    max-width: 1200px;
+  }
+  .flex {
+    padding: 20px;
+  }
+  .cards {
+    padding: 15px;
+  }
+  .service {
+    display: flex;
+  }
+  .service,
+  .Competitive-friends,
+  .indoor-climbing {
+    padding: 3rem;
+  }
+  #bar {
+    width: 100%;
+    margin: 0 20px;
+  }
+  aside {
+    width: 100%;
+    display: flex;
+  }
+  aside p {
+    margin-right: 30px;
+  }
+  .get-btn {
+    width: 20%;
+    margin-right: 500px;
+    margin-left: 0;
+  }
+  .thank-you {
+    display: flex;
+  }
+  .thank-you h1 {
+    display: block;
+  }
+}
