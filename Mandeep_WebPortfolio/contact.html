@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ======================================================== Head====================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- I have choosen the bootstrap to add extra funtionality like navbar, buttons bootstrap is a framework consist of HTMl , Css, and javaScript -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!--  This is the Custom stylesheet used for styling the webite layout and design -->
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Web Portfolio</title>
+  </head>
+  <body>
+    <!-- ============================================== Header =========================== -->
+    <header>
+      <!-- I have choosen the bootstap navebar as it is easy to use and the design fits on all the device sizes -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Brand Image -->
+          <a class="navbar-brand" href="#"
+            ><img id="logo" src="./Images/logo.png" alt="logo"
+          /></a>
+          <!-- Nav-bar-hamburger menue -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =============================================== Form Section ================= -->
+    <!-- I have choosen as section element to put the forn inside so that i can give proper paddings and margins -->
+    <section id="form-section">
+      <h1>Contact Us</h1>
+      <!-- This form element is form the bootstrap.com which gives a very apealing and device size oriented layouts. -->
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Write your question here</label
+        >
+        <!-- The form-control class is used give predesign bootstrap styles to the form  -->
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+      <!-- Btn and Btn- primary is used for giving blue color to the button element btn-primary means blue inn bootstrap -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </section>
+
+    <!-- ===========================================Map Section ====================== -->
+    <section id="reach">
+      <h1>Find us on Map</h1>
+      <!-- Iframe is used to add maps in the website this i frame is directly imported from the google maps for a specific location. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.7698042563948!2d-75.73264838449413!3d45.353458879099726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0655f2e0247d%3A0x5794e2bfb81f848a!2s1443%20Meadowlands%20Dr%20E%2C%20Nepean%2C%20ON!5e0!3m2!1sen!2sca!4v1618343033674!5m2!1sen!2sca"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <!-- ============================================= Footer =========================-->
+    <footer>
+      <p id="copyright">&copy; copyright by Mandeep</p>
+      <section class="links">
+        <a href="#">Home</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Me</a>
+      </section>
+      <aside>
+        <!-- The Btn-danger i=give the button a predefinbed red color and hover style to the button. -->
+        <button type="submit" class="btn btn-danger">To the Top</button>
+      </aside>
+    </footer>
+    <!-- The script element is the part of of bootstrap framework without this most o fthe javascript funtionality won't work.  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

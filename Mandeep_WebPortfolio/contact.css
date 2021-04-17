@@ -1,0 +1,247 @@
+/* ========================================= Css reset ====================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* The Css reset is used to remove all the pre-defined styles given by the browser */
+
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* ======================================= HTML5 display-role reset for older browsers =====================*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ===================================================== All Devices============================ */
+
+/* This section of all devices give the styles to all the divice sizes */
+/*  I have uused google fonts to give the fonts to the website , I used font-family: "Kiwi Maru"*/
+body {
+  font-family: "Kiwi Maru", serif;
+}
+/* For the H1s, "Segoe UI" is used */
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+/* padding gives more room to the element */
+h2 {
+  font-size: 1.2rem;
+  padding: 20px;
+}
+/* Rem is used to give the teh size of the root element; mostly the root element is of 16px *1.2  */
+h3 {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+/* line height gives a height to the words used in the para */
+p {
+  line-height: 20px;
+  margin: 10px 0;
+}
+section {
+  padding: 1.2rem 1.5rem;
+  line-height: 2.4rem;
+}
+/* Display block give the full width to the element and it also helps in aligning the element with margin: auto */
+iframe {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+footer {
+  background-color: rgb(23, 32, 56);
+}
+/*  This gives white color to all the links in the footer element  */
+footer a {
+  color: white;
+}
+
+/*  ==============================================Mobile Devices========================== */
+/*  The media query help the browser to determine which style will apply when the browser window is less/equal to then 454px */
+@media screen and (max-width: 454px) {
+  /* Width and max-width is used to control the overflow of the imeg element */
+  #logo {
+    width: 70%;
+    max-width: 100px;
+  }
+  #navbarNav {
+    padding: 0 0.6rem;
+  }
+  #reach {
+    text-align: center;
+  }
+
+  /* ------------------Mobile Devices: IFram for map---------------------- */
+  iframe {
+    width: 100%;
+  }
+
+  /*--------------------Mobile Devices: Footer--------------------------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  footer p,
+  footer article,
+  footer aside {
+    margin: 10px 0;
+    color: white;
+  }
+}
+
+/* ============================================= Tab Devices and Desktop Devices ========================= */
+
+@media screen and (min-width: 454px) {
+  /* ---------------------------------- Tab and Devices: Header---------------------------- */
+  #logo {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  /* ---------------------------------- Tab and Devices: Footer---------------------------- */
+  footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: baseline;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .links a {
+    padding: 15px 0;
+  }
+  footer article {
+    margin: auto auto;
+  }
+  #copyright {
+    color: white;
+  }
+}
