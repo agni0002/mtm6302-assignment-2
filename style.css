@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.0rem;
+}
+
+.img {
+    width: 300px;
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-viewer > img {
+    height: 450px;
+}
+
+.img-viewer-container {
+    display: flex;
+    font-size: 1.8rem;
+
+}
+
+.nav {
+    height: 450px;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    
+}
